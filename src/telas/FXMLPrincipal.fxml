@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="567.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerfx.FXMLPrincipalController">
+    <children>
+      <MenuBar id="menuPrincipal" fx:id="menuPrincipal" layoutX="-6.0" prefHeight="567.0" prefWidth="795.0" style="-fx-background-color: lightblue;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu id="inicio" fx:id="menuInicio" mnemonicParsing="false" onAction="#menuInicio" text="Inicio">
+            <items>
+              <MenuItem fx:id="itemSair" mnemonicParsing="false" onAction="#sair" text="Sair" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuCliente" mnemonicParsing="false" onAction="#menuClientes" text="Clientes">
+            <items>
+              <MenuItem fx:id="itemClientes" mnemonicParsing="false" onAction="#itemCliente" text="Cadastro de Clientes" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuConsulta" mnemonicParsing="false" onAction="#menuConsultas" text="Consultas">
+            <items>
+              <MenuItem fx:id="itemConsultas" mnemonicParsing="false" onAction="#itemConsulta" text="Diario de Consultas" />
+                  <MenuItem fx:id="itemRelatorio" mnemonicParsing="false" onAction="#carregarGrafico" text="Relatorio de Consultas" />
+            </items>
+          </Menu>
+            <Menu fx:id="menuExame" mnemonicParsing="false" onAction="#menuExames" text="Exames">
+               <items>
+                  <MenuItem fx:id="itemExames" mnemonicParsing="false" onAction="#itemExame" text="Cadastro de Exames" />
+               </items>
+            </Menu>
+            <Menu fx:id="menuTecnico" mnemonicParsing="false" onAction="#menuTecnicos" text="Tecnicos">
+               <items>
+                  <MenuItem fx:id="itemTecnicos" mnemonicParsing="false" onAction="#itemTecnico" text="Cadastro de Tecnicos" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+    </children>
+</AnchorPane>

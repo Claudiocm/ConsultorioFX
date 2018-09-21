@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="689.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerfx.FXMLConsultasController">
+   <children>
+      <Label layoutX="55.0" layoutY="34.0" text="Sequência:" />
+      <Label layoutX="36.0" layoutY="67.0" text="Data Consulta: " />
+      <Label layoutX="244.0" layoutY="67.0" text="Hora:" />
+      <ComboBox fx:id="cmbPaciente" layoutX="119.0" layoutY="96.0" prefHeight="25.0" prefWidth="259.0" />
+      <ComboBox fx:id="cmbTecnico" layoutX="430.0" layoutY="96.0" prefHeight="25.0" prefWidth="231.0" />
+      <Label layoutX="65.0" layoutY="100.0" text="Paciente:" />
+      <Label layoutX="382.0" layoutY="100.0" text="Técnico:" />
+      <TextField fx:id="txtSequencia" layoutX="119.0" layoutY="30.0" prefHeight="25.0" prefWidth="110.0" />
+      <TextField fx:id="txtData" layoutX="119.0" layoutY="63.0" prefHeight="25.0" prefWidth="110.0" />
+      <TextField fx:id="txtHora" layoutX="276.0" layoutY="63.0" prefHeight="25.0" prefWidth="125.0" />
+      <ComboBox fx:id="cmbExame" layoutX="119.0" layoutY="164.0" prefHeight="25.0" prefWidth="308.0" />
+      <Label layoutX="74.0" layoutY="167.0" text="Exame:" />
+      <Button fx:id="btnNovo" layoutX="126.0" layoutY="213.0" mnemonicParsing="false" onAction="#novaConsulta" prefHeight="25.0" prefWidth="69.0" text="Novo" />
+      <Button fx:id="btnCriar" layoutX="207.0" layoutY="213.0" mnemonicParsing="false" onAction="#criarConsulta" prefHeight="25.0" prefWidth="69.0" text="Criar" />
+      <Button fx:id="btnAtualizar" layoutX="288.0" layoutY="213.0" mnemonicParsing="false" onAction="#atualizarConsulta" prefHeight="25.0" prefWidth="69.0" text="Atualizar" />
+      <Button fx:id="btnExcluir" layoutX="375.0" layoutY="213.0" mnemonicParsing="false" onAction="#excluirConsulta" prefHeight="25.0" prefWidth="69.0" text="Excluir" />
+      <Button fx:id="btnLimpar" layoutX="497.0" layoutY="213.0" mnemonicParsing="false" onAction="#limpaConsulta" prefHeight="25.0" prefWidth="92.0" text="Limpar" />
+      <TableView fx:id="tabelaConsulta" layoutX="36.0" layoutY="256.0" prefHeight="275.0" prefWidth="629.0">
+        <columns>
+          <TableColumn fx:id="columnSequencia" prefWidth="75.0" text="Sequencia" />
+          <TableColumn fx:id="columnData" prefWidth="85.0" text="Data" />
+            <TableColumn fx:id="columnHora" prefWidth="86.0" text="Hora" />
+            <TableColumn fx:id="columnPaciente" prefWidth="190.0" text="Paciente" />
+            <TableColumn fx:id="columnExame" prefWidth="192.0" text="Exame" />
+        </columns>
+      </TableView>
+      <Label layoutX="46.0" layoutY="135.0" text="Nascimento:" />
+      <TextField fx:id="txtNascimento" layoutX="119.0" layoutY="131.0" prefHeight="25.0" prefWidth="110.0" />
+      <Label layoutX="235.0" layoutY="135.0" text="Telefone:" />
+      <TextField fx:id="txtTelefone" layoutX="287.0" layoutY="131.0" prefHeight="25.0" prefWidth="140.0" />
+      <Label layoutX="438.0" layoutY="168.0" text="Valor:" />
+      <TextField fx:id="txtValor" layoutX="475.0" layoutY="164.0" />
+   </children>
+</AnchorPane>
