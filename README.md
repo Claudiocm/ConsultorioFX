@@ -1,12 +1,15 @@
 # ConsultorioFX
 Aplicação para agendamento de consultas medicas por data, hora e tipos de exames.
 
+## Linguagens
+- Java 8, linguagens Web [HTML, CSS, Javascript], SQL.
+
 ## Interface JavaFX
-* Interface baseado em framework JavaFX versão 2.1
+* Interface baseado em framework JavaFX e Scene Builder versão 2.1
 
 ## Integração de API
-* Integração de java Persistence API [JPA]
+* Integração de JPA [java Persistence API]
 
 ## Banco de Dados
-* SGBD MySQL para implantação de banco de dados.
+* SGBD MySQL para implantação de banco de dados relacional.
 
