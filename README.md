@@ -2,7 +2,7 @@
 Aplicação para agendamento de consultas medicas por data, hora e tipos de exames.
 
 ## Linguagens
-- Java 8, linguagens Web [HTML, CSS, Javascript], SQL.
+- Java 8, SQL.
 
 ## Interface JavaFX
 * Interface baseado em framework JavaFX e Scene Builder versão 2.1
